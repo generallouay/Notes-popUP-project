@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+}
+.headersContainer{
+    height: 100%;
+    width: 350px;
+}
+.secondHeader , .firstHeader{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.firstHeader{
+    height: 65%;
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+.secondHeader{
+    font-size: 1.9rem;
+    font-weight: 500;
+    color: #05aa3f;
+}
+.textArea{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+.textAreaContainer{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    
+}
+.noteLabel{
+    font-size: 1.5rem;
+}
+.clear{
+    font-weight: 500;
+    padding: 0.4rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+.greenBtn{
+    background-color: #1C7B38;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.greenBtn:hover{
+    background-color: #fff;
+    color: #1f9543;
+    transition: ease 500ms;
+    box-shadow: #1f9543  0px  0px  15px 5px ;
+    font-weight: bolder;
+}
+.lableContainer{
+    width: 92.69px;
+    height: 100%;
+    margin-right: 0.5rem;
+}
+
+textarea{
+    resize: none;
+    font-size: 1.1rem;
+    padding: 1.2rem;
+    border: 1px lightgray solid;
+    border-radius: 10px;
+}
+.btnSection{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnSection button{
+    padding: 0.7rem;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+   
+} 
+.btnSection button:hover{
+    box-shadow: #1f9543  0px  0px  25px 3px ;
+}
+
+#items{
+    width: 100%;
+    margin-top: 2rem;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+.notesContainer{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.noteContainer{
+    width: 46%;
+    height: 175px;
+    border: 1px solid lightgray;
+    padding: 1.2rem;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    overflow-wrap: break-word;
+    transition: ease  100ms;
+
+
+}
+.titleDiv{
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 8px;
+    height: 22px;
+    pointer-events: none;
+}
+.preview{
+    width: 100%;
+    height: 63px;
+    margin-bottom: 10px;
+    padding: 0.7rem;
+}
+.btnsDiv{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+.btnsDiv button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0.5rem;
+    height: 30px;
+    margin-left: 0.5rem;
+    color: #fff;
+    background-color: #0079FF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.viewBtn:hover{
+    box-shadow: #0079FF  0px  0px  10px 1px ;
+    background-color: #fff;
+    color: #0079FF;
+    transition: ease 500ms;
+    font-weight: 600;
+}
+.deleteBtn:hover{
+box-shadow: #0079FF  0px  0px  10px 1px ;
+background-color: #fff;
+color: crimson;
+transition: ease 500ms;
+}
+i{
+    pointer-events: none;
+}
+
+.active{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.644);
+    height: 100vh;
+    width: 100vw;
+    transition: ease-in all 300ms;
+}
+
+.popUp{
+    background-color: #fff;
+    max-width: 600px;
+    height: fit-content;
+    overflow:hidden;
+    margin: 0;
+    margin-top: 15rem;
+}
+
+.fullText{
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    overflow: hidden;
+    pointer-events: none;
+}
+.centerTitle{
+    width:100%;
+    text-align: center;
+    font-size: 2rem;
+}
+.fallAnimation{
+    transform: matrix(1, 2, 3, 4, 5, 6);
+    transition-duration: 500ms;
+    opacity: 0;
+}
+.fallAnimation01{
+    transform: translate(120px, 50%);
+    transition-duration: 500ms;
+    opacity: 0;
+}
+.fallAnimation02{
+    transform: scale(2, 0.5);
+    transition-duration: 500ms;
+    opacity: 0;
+}
+.fallAnimation03{
+    transform: rotate(0.5turn);
+    transition-duration: 500ms;
+    opacity: 0;
+}
+.fallAnimation04{
+    transform: skew(30deg, 20deg);
+    transition-duration: 500ms;
+    opacity: 0;
+}
+.fallAnimation05{
+    transform: scale(0.5) translate(-100%, -100%);
+    transition-duration: 500ms;
+    opacity: 0;
+}
+
+footer{
+    width: 100%;
+    height: 8vh;
+    position: static;
+    bottom:0;
+    background-color: rgba(0, 0, 0, 0.068);
+}
+.footerContainer{
+    max-width: 80%;
+    height: 100%;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.noteAnimation{
+
+    transition: ease  500ms;
+    display: block;
+}

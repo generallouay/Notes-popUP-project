@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Raleway:wght@100;200;300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <div class="headersContainer">
+        <div class="firstHeader">Note Taker</div>
+        <div class="secondHeader">Add A New Note:</div>
+      </div>
+    </header>
+    <section class="textArea">
+      <div class="textAreaContainer">
+        <div class="lableContainer">
+            <label class="noteLabel" for="text">Note:</label>
+            <button class="clear greenBtn">Clear</button>
+        </div>
+        <textarea name="text" id="text" cols="100" rows="2" placeholder="Write your note here" maxlength="400"></textarea>
+      </div>
+    </section>
+    <section class="btnSection">
+      <button id="mainBtn" class="greenBtn">Add Note</button>
+    </section>
+    <section id="items">
+        <div class="notesContainer"></div>
+    </section>
+    <footer>
+      <div class="footerContainer">
+        Copyright © 2022 Noter, Inc.
+      </div>
+    </footer>
+    <div class="overlay"></div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
